@@ -15,40 +15,41 @@ html {
 header {
 	width: 100%;
 	margin: auto;
-	padding-top: 5px;
-	padding-bottom: 1px;
 	border-bottom: solid 0.3em black;
 	position: fixed;
 	z-index: 100;
-	background: white;
-
-}
-
-.nav-bar {
-	width: 80%;
+	background: #FF964C;
+	text-align: center;
 
 }
 
 
 .logo {
-	background: lightblue;
-	display: inline-block;
-	margin-left: 4em;
-	margin-right: 2em;
+	background: #C05200;
+	display: block;
 	padding: 20px;
+	text-align: center;
 
 }
 
 .nav-bar ul,
 .nav-bar li {
 	display: inline-block;
-	margin: 20px;
-	padding-left: -5px;
+	padding: 20px;
 }
+
 .nav-bar li {
-	padding-bottom: 0.15em;
-	border-bottom: 0.15em solid orange;
-	border-radius: 3px;
+	border-bottom: 0.15em solid #561700;
+
+	border-radius: 5px;
+	margin-right: 1rem;
+	margin-left: 1rem;
+	padding: 15px;
+	box-shadow: -0.5px -0.5px 5px #E2D9D2;
+	color: #E2D9D2;
+	background: #7F3600;
+
+
 }
 
 
@@ -56,10 +57,10 @@ header {
 ============================*/
 
 .main-block {
-	background: grey;
+	background: white;
 	margin-left: 20%;
 	margin-right: 20%;
-	height: 100vh;
+	text-align: center;
 }
 
 .primary-content {
@@ -80,6 +81,10 @@ hr {
 /* FOOTER
 ====================================*/
 
+.wrap {
+	height: 100vh;
+}
 footer {
 	background: grey;
+	padding: 20px;
 }
