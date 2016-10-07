@@ -7,7 +7,8 @@ html {
 	margin: auto;
 }
 
-.main-wrapper {
+.wrap {
+  height: 100%;
 
 }
 /* NAV BAR
@@ -16,9 +17,8 @@ header {
 	width: 100%;
 	margin: auto;
 	border-bottom: solid 0.1em black;
-	position: fixed;
-	z-index: 100;
-	background: white;
+  position: fixed;
+	background-color: transparent;
 	text-align: center;
 
 }
@@ -38,25 +38,24 @@ header {
 .nav-bar ul,
 .nav-bar li {
 	display: inline-block;
-	padding: 20px;
+	padding: 30px;
 }
 
 .nav-bar li {
-	border-bottom: 0.15em solid #561700;
-
-	border-radius: 2px;
+	border-left: 0.15em solid #FF9343;
+  border-radius: 2px;
 	margin-right: 1rem;
 	margin-left: 1rem;
-	padding: 8px;
-	box-shadow: -0.5px -0.5px 3px #E2D9D2;
+	padding: 5px 15px 5px 15px;
 	color: orange;
-	background: white;
-
+	background: black;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
 }
 
 a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 a:hover {
@@ -65,20 +64,26 @@ a:hover {
 
 li:hover {
   transform: matrix(1.1, 0, 0, 1.1, 1, 0);
-  transition-timing-function: cubic-bezier(.17,.67,.56,.97);
+  transition: -webkit-transform 0.1s cubic-bezier(.66,-0.59,.41,1.42);
+}
+
+.nav-bar li:hover {
 
 }
 
-
-
 /* CONTENT
 ============================*/
+
+body {
+  background: #EDEDED;
+}
 
 .main-block {
 	background: white;
 	margin-left: 20%;
 	margin-right: 20%;
 	text-align: center;
+  padding: 2em;
 }
 
 .primary-content {
@@ -99,10 +104,8 @@ hr {
 /* FOOTER
 ====================================*/
 
-.wrap {
-	height: 100vh;
-}
+
 footer {
 	background: grey;
 	padding: 20px;
-}
+  position: relative;
