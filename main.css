@@ -8,24 +8,27 @@ html {
 }
 
 .main-wrapper {
-	padding-top: 102px;
+
 }
 /* NAV BAR
 ============================*/
 header {
 	width: 100%;
 	margin: auto;
-	border-bottom: solid 0.3em black;
+	border-bottom: solid 0.1em black;
 	position: fixed;
 	z-index: 100;
-	background: #FF964C;
+	background: white;
 	text-align: center;
 
 }
 
+#tree {
+  border-bottom: solid 0.1em black;
+}
 
 .logo {
-	background: #C05200;
+	background: white;
 	display: block;
 	padding: 20px;
 	text-align: center;
@@ -41,16 +44,31 @@ header {
 .nav-bar li {
 	border-bottom: 0.15em solid #561700;
 
-	border-radius: 5px;
+	border-radius: 2px;
 	margin-right: 1rem;
 	margin-left: 1rem;
-	padding: 15px;
-	box-shadow: -0.5px -0.5px 5px #E2D9D2;
-	color: #E2D9D2;
-	background: #7F3600;
-
+	padding: 8px;
+	box-shadow: -0.5px -0.5px 3px #E2D9D2;
+	color: orange;
+	background: white;
 
 }
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: orange;
+}
+
+li:hover {
+  transform: matrix(1.1, 0, 0, 1.1, 1, 0);
+  transition-timing-function: cubic-bezier(.17,.67,.56,.97);
+
+}
+
 
 
 /* CONTENT
